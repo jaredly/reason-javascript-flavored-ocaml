@@ -290,6 +290,15 @@ very early days
 
 ----
 
+## Comparison to Elm
+
+- elm keeps js at arm's length <!-- .element: class="fragment" -->
+- interop more cumbersome, but safer <!-- .element: class="fragment" -->
+- less mature type system <!-- .element: class="fragment" -->
+- only targets JavaScript <!-- .element: class="fragment" -->
+
+---
+
 ## Comparison to Flow
 
 - flow doesn't change js runtime semantics <!-- .element: class="fragment" -->
@@ -301,10 +310,4 @@ very early days
 
 ---
 
-## Comparison to Elm
-
-- elm keeps js at arm's length <!-- .element: class="fragment" -->
-- interop more cumbersome, but safer <!-- .element: class="fragment" -->
-- less mature type system <!-- .element: class="fragment" -->
-- only targets JavaScript <!-- .element: class="fragment" -->
-
+### FIN
