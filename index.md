@@ -3,8 +3,8 @@ title: "Reason: JavaScript-flavored OCaml"
 theme: mine
 revealOptions:
   transition: fade
-  showNotes: false
-  controls: false
+  showNotes: true
+  controls: true
 extraHTML: |
   <div id="footer" style="
     position: absolute;
@@ -30,18 +30,32 @@ extraHTML: |
 
 ---
 
-## Defining terms
-## What does Reason look like?
-## What's the status of Reason?
-## Comparison to other langs
+## Why Reason?
+- you want a solid type system <!-- .element: class="fragment" -->
+- you want compile to js or native binary <!-- .element: class="fragment" -->
+- you like elm but want easier interop <!-- .element: class="fragment" -->
 
 ---
 
-### Defining terms
+## What is Reason?
 
-- OCaml
-- Reason
-- BuckleScript
+A syntax & tooling layer over ocaml <!-- .element: class="fragment" -->
+
+- OCaml   <!-- .element: class="fragment" -->
+- BuckleScript <!-- .element: class="fragment" -->
+
+Note:
+- OCaml is a 20 year old langauge
+- Reason is a new syntax for OCaml that's more familiar for JavaScript developers
+- BuckleScript is a new JavaScript backend from Bloomberg. OCaml has had a js
+  backend for a while (js_of_ocaml), but BuckleScript is blazing fast, has
+  really readable js output
+
+---
+
+### What does Reason look like? <!-- .element: class="fragment" -->
+### What's the status of Reason? <!-- .element: class="fragment" -->
+### Comparison to other langs <!-- .element: class="fragment" -->
 
 ---
 
@@ -237,24 +251,22 @@ let doSomething maybeName => {
 ---
 
 ## Syntax
-in flux
-
-[see this PR](https://github.com/facebook/reason/pull/1299)
+settling down
 
 ---
 
 ## Build tools
 getting there
 
-- bucklescript's `bsb`
-- jbuilder
+- bucklescript's `bsb` <!-- .element: class="fragment" -->
+- jbuilder <!-- .element: class="fragment" -->
 
 ---
 
 ## Package manager
 
-- npm w/ bucklescript
-- opam w/ native/ocaml dev
+- npm for bucklescript
+- opam for native/ocaml dev
 
 ---
 
@@ -280,37 +292,19 @@ very early days
 
 ## Comparison to Flow
 
-- flow doesn't change js runtime semantics
-- easier adoption (just strip the annotations)
-- still have some of the sadness of js
-- no real variant/sum types
-- type system less mature, less sound
-- flow adapts to js idioms
+- flow doesn't change js runtime semantics <!-- .element: class="fragment" -->
+- easier adoption (just strip the annotations) <!-- .element: class="fragment" -->
+- still have some of the sadness of js <!-- .element: class="fragment" -->
+- no real variant/sum types <!-- .element: class="fragment" -->
+- type system less mature, less sound <!-- .element: class="fragment" -->
+- flow adapts to js idioms <!-- .element: class="fragment" -->
 
 ---
 
 ## Comparison to Elm
 
-- elm keeps js at arm's length
-- interop more cumbersome, but safer
-- less mature type system
-- only targets JavaScript
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- elm keeps js at arm's length <!-- .element: class="fragment" -->
+- interop more cumbersome, but safer <!-- .element: class="fragment" -->
+- less mature type system <!-- .element: class="fragment" -->
+- only targets JavaScript <!-- .element: class="fragment" -->
 

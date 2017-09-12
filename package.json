@@ -2,7 +2,7 @@
   "scripts": {
     "start": "reveal-md index.md -w",
     "gen": "rsync -r theme images _static && reveal-md index.md -S _static",
-    "print": "reveal-md index.md --print jared-forsyth-type-systems.pdf"
+    "print": "reveal-md index.md --print jared-forsyth-reason-meetup.pdf"
   },
   "name": "rev",
   "version": "1.0.0",
